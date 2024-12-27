@@ -1,62 +1,62 @@
 import type { Config } from "tailwindcss";
 
 export default {
-    darkMode: ["class"],
-    content: [
+  darkMode: ["class"],
+  content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-  	extend: {
-  		colors: {
-  			background: 'hsl(var(--background))',
-  			foreground: 'hsl(var(--foreground))',
-  			card: {
-  				DEFAULT: 'hsl(var(--card))',
-  				foreground: 'hsl(var(--card-foreground))'
-  			},
-  			popover: {
-  				DEFAULT: 'hsl(var(--popover))',
-  				foreground: 'hsl(var(--popover-foreground))'
-  			},
-  			primary: {
-  				DEFAULT: 'hsl(var(--primary))',
-  				foreground: 'hsl(var(--primary-foreground))'
-  			},
-  			secondary: {
-  				DEFAULT: 'hsl(var(--secondary))',
-  				foreground: 'hsl(var(--secondary-foreground))'
-  			},
-  			muted: {
-  				DEFAULT: 'hsl(var(--muted))',
-  				foreground: 'hsl(var(--muted-foreground))'
-  			},
-  			accent: {
-  				DEFAULT: 'hsl(var(--accent))',
-  				foreground: 'hsl(var(--accent-foreground))'
-  			},
-  			destructive: {
-  				DEFAULT: 'hsl(var(--destructive))',
-  				foreground: 'hsl(var(--destructive-foreground))'
-  			},
-  			border: 'hsl(var(--border))',
-  			input: 'hsl(var(--input))',
-  			ring: 'hsl(var(--ring))',
-  			chart: {
-  				'1': 'hsl(var(--chart-1))',
-  				'2': 'hsl(var(--chart-2))',
-  				'3': 'hsl(var(--chart-3))',
-  				'4': 'hsl(var(--chart-4))',
-  				'5': 'hsl(var(--chart-5))'
-  			}
-  		},
-  		borderRadius: {
-  			lg: 'var(--radius)',
-  			md: 'calc(var(--radius) - 2px)',
-  			sm: 'calc(var(--radius) - 4px)'
-  		}
-  	}
+    extend: {
+      colors: {
+        background: '#FFFFFF', // White background
+        foreground: '#0a2540', // Dark blue text
+        card: {
+          DEFAULT: '#B4D4FF', // Light blue card background
+          foreground: '#0a2540', // Dark blue text on cards
+        },
+        popover: {
+          DEFAULT: '#86B6F6', // Medium blue for popovers
+          foreground: '#FFFFFF', // White text on popovers
+        },
+        primary: {
+          DEFAULT: '#86B6F6', // Medium blue for primary actions
+          foreground: '#FFFFFF', // White text on primary elements
+        },
+        secondary: {
+          DEFAULT: '#B4D4FF', // Light blue for secondary actions
+          foreground: '#001F3F', // Dark text for secondary actions
+        },
+        muted: {
+          DEFAULT: '#F0F5FF', // A very light blue for muted elements
+          foreground: '#86B6F6', // Subdued blue text
+        },
+        accent: {
+          DEFAULT: '#86B6F6', // Medium blue for accents
+          foreground: '#FFFFFF', // White text on accents
+        },
+        destructive: {
+          DEFAULT: '#FF6961', // Red for destructive actions
+          foreground: '#FFFFFF', // White text on destructive elements
+        },
+        border: '#B4D4FF', // Light blue for borders
+        input: '#E6F0FF', // Slightly tinted blue for input backgrounds
+        ring: '#86B6F6', // Medium blue for focus rings
+        chart: {
+          '1': '#86B6F6',
+          '2': '#B4D4FF',
+          '3': '#001F3F',
+          '4': '#F0F5FF',
+          '5': '#FF6961',
+        },
+      },
+      borderRadius: {
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
+      },
+    },
   },
   plugins: [require("tailwindcss-animate")],
 } satisfies Config;
