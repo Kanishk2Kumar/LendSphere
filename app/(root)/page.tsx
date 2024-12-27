@@ -1,9 +1,15 @@
-export default function Home() {
+
+import FAQSection from '../../components/faq';
+import Footer from '../../components/footer';
+
+function App() {
   return (
     <div>
-      <h1 className="text-6xl text-blue-500">
-        Lend Sphere
-      </h1>
+      <FAQSection />
+      <Footer />
     </div>
   );
 }
+
+export default App;
+
