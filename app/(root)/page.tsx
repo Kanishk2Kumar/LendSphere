@@ -1,13 +1,14 @@
 
+import Navbar from '@/components/navbar';
 import FAQSection from '../../components/faq';
 import Footer from '../../components/footer';
+import Hero from '../../components/hero';
 
 function App() {
   return (
     <div>
-      <div className='flex justify-center items-center min-h-screen text-6xl'>
-        <h1>Hero Section</h1>
-      </div>
+      <Navbar />
+      <Hero />
       <FAQSection />
       <Footer />
     </div>
