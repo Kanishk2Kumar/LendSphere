@@ -35,14 +35,14 @@ const supportedAssets = [
 
 const OurSupportedAssets = () => {
   return (
-    <section className="bg-gradient-to-r from-white to-blue-50 py-11">
-      <div className="container mx-auto px-6">
+    <section className="bg-gradient-to-r from-white to-blue-50 py-20">
+      <div className="container mx-auto px-16gi">
         <h2 className="text-4xl font-bold text-center text-[#1a1a1a] mb-12">
           Our <span className="text-[#3a50e0]">Supported Assets</span>
         </h2>
         <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-6 place-items-center">
           {supportedAssets.map((asset, index) => (
-            <div key={index} className="flex flex-col items-center">
+            <div key={index} className="flex flex-col items-center my-7">
               <div className="w-20 h-20 rounded-full overflow-hidden border-4 border-gray-200 shadow-lg">
                 <img
                   src={asset.logo}
