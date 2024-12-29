@@ -18,9 +18,11 @@ const FAQSection = () => {
   ];
 
   return (
-    <section className="bg-muted py-12">
+    <section className="bg-gradient-to-r from-white to-blue-50">
       <div className="max-w-4xl mx-auto px-4">
-        <h2 className="text-3xl font-bold text-foreground text-center mb-6">Frequently Asked Questions</h2>
+      <h2 className="text-4xl font-bold text-center text-[#1a1a1a] mb-12">
+        Frequently <span className="text-[#3a50e0]">Asked Quetions</span>
+        </h2>
         <Accordion type="single" collapsible className="space-y-4">
           {faqs.map((faq, index) => (
             <AccordionItem key={index} value={`item-${index}`}>
