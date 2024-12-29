@@ -39,7 +39,7 @@ const TopInvestor = () => {
   ];
 
   return (
-    <section className="bg-gradient-to-r from-white to-blue-50">
+    <section className="bg-gradient-to-r from-white to-blue-50 pt-10">
       <div className="container mx-auto px-6">
         <h2 className="text-4xl font-bold text-center text-[#1a1a1a] mb-12">
           Meet Our <span className="text-[#3a50e0]">Top Investors</span>
